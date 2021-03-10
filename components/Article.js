@@ -163,6 +163,7 @@ const data = [
   articleElements.forEach(article => {
     articles.appendChild(article)
   })
+  
 
  /* Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
   Refresh the page to see the new article.
@@ -179,3 +180,10 @@ data.push(
     thirdParagraph: `Finally, Walter looked at me and said, “One hundred fifty-six knots. What did you see?” Trying to find my voice, I stammered, “One hundred fifty-two.” We sat in silence for a moment. Then Walt said, “Don’t ever do that to me again!” And I never did. A year later, Walter and I were having lunch in the Mildenhall Officer’s club, and overheard an officer talking to some cadets about an SR-71 fly-past that he had seen one day. Of course, by now the story included kids falling off the tower and screaming as the heat of the jet singed their eyebrows. Noticing our HABU patches, as we stood there with lunch trays in our hands, he asked us to verify to the cadets that such a thing had occurred. Walt just shook his head and said, “It was probably just a routine low approach; they're pretty impressive in that plane.” Impressive indeed. Little did I realize after relaying this experience to my audience that day that it would become one of the most popular and most requested stories. It’s ironic that people are interested in how slow the world’s fastest jet can fly. Regardless of your speed, however, it’s always a good idea to keep that cross-check up…and keep your Mach up, too.`,
   }
     );
+
+
+    
+  const lastArticle = articleMaker(data[data.length - 1])
+  
+  articles.appendChild(lastArticle)
+  
